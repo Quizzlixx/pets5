@@ -112,4 +112,9 @@ class Pets4Controller
         $view = new Template();
         echo $view->render('views/results.html');
     }
+    public function view()
+    {
+        $view = new Template();
+        echo $view->render('views/view.html');
+    }
 }

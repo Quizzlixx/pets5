@@ -60,6 +60,10 @@ $f3->route('GET|POST /results', function () {
     $GLOBALS['controller']->results();
 });
 
+$f3->route('GET /view', function(){
+   $GLOBALS['controller'] ->view();
+});
+
 // run f3
 $f3->run();
 
