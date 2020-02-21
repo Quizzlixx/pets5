@@ -2,11 +2,9 @@
 
 
 /*Kerrie Low
-* Elijah Maret
-* date: Jan/24/2020
-* URL: http://klow4.greenriverdev.com/328/pets2/index.php
-* URL: http://emaret.greenriverdev.com/328/pets2/index.php
-* description:
+* Dallas Sloan
+* date: 2.21.2020
+* URL: http://klow4.greenriverdev.com/328/pets5
 */
 
 // require autoload file
@@ -21,7 +19,6 @@ session_start();
 // Turn on error reporting
 ini_set('display_errors', 1);
 error_reporting(E_ALL);
-
 
 
 //instantiate F3
@@ -60,8 +57,8 @@ $f3->route('GET|POST /results', function () {
     $GLOBALS['controller']->results();
 });
 
-$f3->route('GET /view', function(){
-   $GLOBALS['controller'] ->view();
+$f3->route('GET /view', function () {
+    $GLOBALS['controller']->view();
 });
 
 // run f3

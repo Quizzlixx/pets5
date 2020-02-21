@@ -112,8 +112,14 @@ class Pets4Controller
         $view = new Template();
         echo $view->render('views/results.html');
     }
-    public function view()
+
+    public function view($f3)
     {
+        $pets = $GLOBALS['db']->getPets();
+
+        $this->_f3->set('pets', $pets);
+
+
         $view = new Template();
         echo $view->render('views/view.html');
     }
