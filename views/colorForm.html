@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pick a Color</title>
+</head>
+<body>
+<form method="post" action="#">
+    <label> what color animal would you like?
+        <select type="text" name="color">
+            <repeat group="{{ @colors }}" value="{{ @type }}">
+                <option value="{{ @type }}"
+                <check if="{{ @color == @selectedColor }}">
+                    selected
+                </check>
+                > {{ @type }}</option>
+            </repeat>
+        </select>
+    </label>
+    <input type="Submit" value="Next">
+
+    <check if="{{ isset(@errors['color']) }}">
+        <br>
+        <label> {{ @errors['color'] }}</label>
+    </check>
+</form>
+</body>
+</html>

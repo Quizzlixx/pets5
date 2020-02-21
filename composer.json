@@ -1,0 +1,19 @@
+{
+  "name": "klow.greenriverdev/328/pets4",
+  "authors": [
+    {
+      "name": "Kerrie Low",
+      "email": "klow4@mail.greenriver.edu"
+    },
+    {
+      "name": "Dallas Sloan",
+      "email": "dsloan4@mail.greenriver.edu"
+    }
+  ],
+  "require": {
+    "bcosca/fatfree-core": "dev-master"
+  },
+  "autoload": {
+    "classmap": ["classes/", "controller/", "model/"]
+  }
+}
