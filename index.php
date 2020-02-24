@@ -25,6 +25,7 @@ error_reporting(E_ALL);
 $f3 = Base::instance();
 
 // instantiate controller object
+$db = new Database();
 $controller = new Pets4Controller($f3);
 
 //Set dubug level

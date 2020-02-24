@@ -1,5 +1,5 @@
 <?php
-require_once("config-student.php");
+require_once("config-pet.php");
 
 class Database
 {
@@ -11,7 +11,7 @@ class Database
         try {
             //Create a new PDO connection
             $this->_dbh = new PDO(DB_DSN, DB_USERNAME, DB_PASSWORD);
-            // echo "Connected!";
+            echo "Connected!";
         } catch (PDOException $e) {
             echo $e->getMessage();
         }

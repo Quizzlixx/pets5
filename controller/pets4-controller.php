@@ -113,12 +113,11 @@ class Pets4Controller
         echo $view->render('views/results.html');
     }
 
-    public function view($f3)
+    public function view()
     {
         $pets = $GLOBALS['db']->getPets();
 
         $this->_f3->set('pets', $pets);
-
 
         $view = new Template();
         echo $view->render('views/view.html');
