@@ -17,7 +17,7 @@ class Pets4Controller
 
     public function animal($f3)
     {
-        //    var_dump($_POST);
+        var_dump($_SESSION['pet1']);
 
         if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
@@ -48,7 +48,7 @@ class Pets4Controller
 
     public function color($f3)
     {
-        //    var_dump($_POST);
+        var_dump($_SESSION['pet1']);
 
         if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
@@ -78,7 +78,7 @@ class Pets4Controller
 
     public function name($f3)
     {
-        //    var_dump($_POST);
+        var_dump($_SESSION['pet1']);
 
         if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
@@ -107,8 +107,9 @@ class Pets4Controller
 
     public function results()
     {
-        //    var_dump($_SESSION);
-
+        var_dump($_SESSION['pet1']);
+        $pet = $_SESSION['pet1'];
+        $GLOBALS['db']->addPet($pet);
         $view = new Template();
         echo $view->render('views/results.html');
     }
